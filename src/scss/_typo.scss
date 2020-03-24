@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Source+Code+Pro&display=swap');
+main .body-ctn {
+  h1,
+  h2,
+  h3,
+  h4 {
+    text-transform: uppercase;
+    margin: 0 0 1.5rem 0;
+  }
+
+  h1,
+  h2 {
+    font-family: 'Oswald', sans-serif;
+    color: mat-color($mat-gray, 900);
+  }
+
+  h3,
+  h4,
+  p {
+    font-family: 'Source Code Pro', monospace;
+    color: mat-color($mat-gray, 900);
+  }
+
+  h1 {
+    font-size: 3rem;
+    padding-bottom: 0.5rem;
+    border-bottom: solid 4px mat-color($mat-gray, 900);
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    margin-bottom: 0.25rem;
+    span {
+      color: mat-color($mat-pink, A400);
+      transition: all ease 0.2s;
+      a {
+        text-decoration: none;
+        color: inherit;
+        &:hover {
+          color: darken(mat-color($mat-pink, A400), 10%);
+        }
+      }
+    }
+  }
+
+  div.dates {
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    color: mat-color($mat-gray, 700);
+  }
+}

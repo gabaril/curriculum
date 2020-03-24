@@ -1,0 +1,49 @@
+@import '~@angular/material/theming';
+
+main {
+  background-color: white;
+  display: flex;
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100vh;
+    width: 4rem;
+    background-color: mat-color($mat-gray, 900);
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 100%;
+      display: block;
+      border-top : 100vh solid mat-color($mat-gray, 900);
+      border-right : 2.5rem solid transparent;
+    }
+    .link {
+      height: 4rem;
+      width: 4rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+      color: mat-color($mat-pink, A400);
+      text-decoration: none;
+      transition: all ease 0.2s;
+      &:hover{
+        background-color: rgba(255,255,255,0.05);
+      }
+      &.active {
+        text-decoration: underline;
+        //border-bottom: solid 2px mat-color($mat-pink, A400);
+      }
+    }
+  }
+  .body-ctn {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1.5rem 1.5rem 1.5rem 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
