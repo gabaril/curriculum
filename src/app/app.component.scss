@@ -4,9 +4,12 @@ main {
   background-color: white;
   display: flex;
   .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
     flex-direction: column;
-    position: relative;
+    //position: relative;
     height: 100vh;
     width: 4rem;
     background-color: mat-color($mat-gray, 900);
@@ -42,8 +45,13 @@ main {
   .body-ctn {
     width: 100%;
     box-sizing: border-box;
-    padding: 1.5rem 1.5rem 1.5rem 4rem;
+    padding: 1.5rem 1.5rem 1.5rem 8rem;
     max-width: 1200px;
     margin: 0 auto;
+  }
+  .mat-fab {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
   }
 }

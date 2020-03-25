@@ -1,0 +1,16 @@
+@import '~@angular/material/theming';
+section.mandats {
+  div.block {
+    margin-bottom: 3rem;
+    h4 {
+      margin: 1rem 0 0.5rem 0;
+      text-transform: uppercase;
+      i {
+        color: mat-color($mat-pink, A400);
+      }
+    }
+    ul {
+      margin: 0.5rem 0;
+    }
+  }
+}

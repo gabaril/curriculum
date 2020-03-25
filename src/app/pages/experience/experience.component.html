@@ -2,8 +2,8 @@
 <section class="experience">
   <div>
     <h3><span><a href="https://effenti.ca/" target="_blank">EFFENTI, QUÉBEC</a></span> — <i>DÉVELOPPEUR FRONT-END</i></h3>
-    <div class="dates">OCTOBRE 2018 À OCTOBRE 2018</div>
-    <ul>
+    <div class="dates">NOVEMBRE 2018 À {{today}}</div>
+    <ul class="bullet-points">
       <li>Développer des applications web et mobiles.</li>
       <li>Participer à la conception d’architectures applicatives.</li>
       <li>Concevoir des interfaces intuitives et accessibles.</li>
@@ -13,16 +13,16 @@
   <div>
     <h3><span><a href="https://www.cgi.com/" target="_blank">CGI, QUÉBEC</a></span> — <i>DÉVELOPPEUR FRONT-END</i></h3>
     <div class="dates">OCTOBRE 2017 À OCTOBRE 2018</div>
-    <ul>
+    <ul class="bullet-points">
       <li>Développer des applications web progressives (PWA) à partir d’Angular.</li>
       <li>Participer à la conception d’architectures applicatives.</li>
       <li>Concevoir des interfaces intuitives et accessibles.</li>
     </ul>
   </div>
   <div>
-    <h3><span><a href="https://absolu.ca/" target="_blank">ABSOLU, QUÉBEC</a></span> — <i>DÉVELOPPEUR WEB</i></h3>
-    <div class="dates">MARS 2017 À OCTOBRE 2017</div>
-    <ul>
+    <h3><span><a href="https://absolu.ca/" target="_blank">ABSOLU, QUÉBEC</a></span> — <i>DÉVELOPPEUR FULL-STACK</i></h3>
+    <div class="dates">MARS 2017 À SEPTEMBRE 2017</div>
+    <ul class="bullet-points">
       <li>Développer des sites web à partir de CMS tels que Wordpress et Joomla.</li>
       <li>Reproduire les interfaces graphiques conçues par les Designers.</li>
       <li>Effectuer la mise en ligne une fois les projets complétés.</li>
@@ -31,10 +31,35 @@
   <div>
     <h3><span><a href="http://www.pratico-pratiques.com/" target="_blank">ÉDITIONS PRATICO-PRATIQUES, QUÉBEC</a></span> — <i>WEBMESTRE</i></h3>
     <div class="dates">JUIN 2016 À AOÛT 2016</div>
-    <ul>
+    <ul class="bullet-points">
       <li>Intégrer les nouveaux contenus à l’aide d’un CMS.</li>
       <li>Effectuer un entretien régulier de la plateforme.</li>
     </ul>
   </div>
+</section>
 
+<h2>Sommaire de l'expertise</h2>
+<section class="sommaire">
+  <table>
+    <tbody>
+      <tr>
+        <td>DÉVELOPPEUR FRONT-END</td>
+        <td>{{expertiseFE}} mois</td>
+      </tr>
+      <tr>
+        <td>DÉVELOPPEUR FULL-STACK</td>
+        <td>8 mois</td>
+      </tr>
+      <tr>
+        <td>WEBMESTRE</td>
+        <td>3 mois</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>TOTAL</td>
+        <td>{{expertiseFE + 8 + 3}} mois</td>
+      </tr>
+    </tfoot>
+  </table>
 </section>
