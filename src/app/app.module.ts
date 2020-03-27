@@ -13,6 +13,8 @@ import {PresentationComponent} from './pages/presentation/presentation.component
 import { LayoutComponent } from './pages/layout.component';
 import { LangageComponent } from './pages/langage/langage.component';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,8 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     BrowserAnimationsModule,
     MatIconModule,
     MatButtonModule,
-    MatTooltipModule
+    MatTooltipModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]
