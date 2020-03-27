@@ -11,10 +11,16 @@ export class LayoutComponent implements OnInit, AfterViewInit {
   @ViewChildren('section') private anchors: QueryList<ElementRef>;
   private sections: any[];
   public activeElement: string;
+  public innerWidth: number;
 
   @HostListener('window:scroll', ['$event'])
   scrollHandler() {
     this.trackPagePosition();
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
+    this.innerWidth = window.innerWidth;
   }
 
   constructor(
@@ -24,6 +30,7 @@ export class LayoutComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit(): void {
+    this.innerWidth = window.innerWidth;
     this.activeElement = 'qui-suis-je';
   }
 
