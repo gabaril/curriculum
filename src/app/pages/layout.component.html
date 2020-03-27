@@ -1,0 +1,50 @@
+<main>
+  <aside class="sidebar-ctn">
+    <div class="sidebar">
+      <a class="link" routerLink="" fragment="qui-suis-je" [ngClass]="{'active': activeElement === 'qui-suis-je'}">
+        <mat-icon>face</mat-icon>
+      </a>
+      <a class="link" routerLink="" fragment="experience" [ngClass]="{'active': activeElement === 'experience'}">
+        <mat-icon>work</mat-icon>
+      </a>
+      <a class="link" routerLink="" fragment="competences" [ngClass]="{'active': activeElement === 'competences'}">
+        <mat-icon>whatshot</mat-icon>
+      </a>
+      <a class="link" routerLink="" fragment="langues" [ngClass]="{'active': activeElement === 'langues'}">
+        <mat-icon>language</mat-icon>
+      </a>
+      <a class="link" routerLink="" fragment="formation" [ngClass]="{'active': activeElement === 'formation'}">
+        <mat-icon>school</mat-icon>
+      </a>
+      <a class="link" routerLink="" fragment="mandats" [ngClass]="{'active': activeElement === 'mandats'}">
+        <mat-icon>assignment</mat-icon>
+      </a>
+    </div>
+  </aside>
+
+  <div class="body-ctn">
+    <h1>Gabriel Claveau-Baril</h1>
+    <section #section id="qui-suis-je" title="qui-suis-je">
+      <app-presentation></app-presentation>
+    </section>
+    <section #section id="experience" title="experience">
+      <app-experience></app-experience>
+    </section>
+    <section #section id="competences" title="competences">
+      <app-competences></app-competences>
+    </section>
+    <section #section id="langues" title="langues">
+      <app-langage></app-langage>
+    </section>
+    <section #section id="formation" title="formation">
+      <app-formations></app-formations>
+    </section>
+    <section #section id="mandats" title="mandats">
+      <app-mandats></app-mandats>
+    </section>
+  </div>
+
+  <button mat-fab color="accent" (click)="openPDF()">
+    <mat-icon>picture_as_pdf</mat-icon>
+  </button>
+</main>

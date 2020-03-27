@@ -29,6 +29,16 @@ main .body-ctn {
 
   h2 {
     font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    .mat-icon {
+      margin-right: 0.5rem;
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+      width: 1.5rem;
+      height: 1.5rem;
+      //color: mat-color($mat-pink, A400);
+    }
   }
 
   h3 {
