@@ -3,25 +3,27 @@
 main {
   background-color: white;
   display: flex;
+
   .sidebar {
     position: fixed;
     top: 0;
     right: 0;
     display: flex;
     flex-direction: column;
-    //position: relative;
     height: 100vh;
     width: 4rem;
     background-color: mat-color($mat-gray, 900);
+
     &:before {
       content: '';
       position: absolute;
       top: 0;
       right: 4rem;
       display: block;
-      border-top : 100vh solid mat-color($mat-gray, 900);
-      border-left : 2.5rem solid transparent;
+      border-top: 100vh solid mat-color($mat-gray, 900);
+      border-left: 2.5rem solid transparent;
     }
+
     .link {
       height: 4rem;
       width: 4rem;
@@ -31,13 +33,16 @@ main {
       color: mat-color($mat-gray, 500);
       text-decoration: none;
       transition: all ease 0.2s;
+
       .mat-icon {
         font-size: 1.5rem;
         line-height: 1.5rem;
       }
-      &:hover{
-        background-color: rgba(255,255,255,0.05);
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.05);
       }
+
       &.active {
         color: mat-color($mat-pink, A400);
         //text-decoration: underline;
@@ -45,19 +50,48 @@ main {
       }
     }
   }
+
   .body-ctn {
     width: 100%;
     box-sizing: border-box;
     padding: 1.5rem 8rem 1.5rem 1.5rem;
     max-width: 1200px;
     margin: 0 auto;
+
     section {
       margin-bottom: 5rem;
     }
   }
+
   .mat-fab {
     position: fixed;
     bottom: 2rem;
     right: 2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+    .sidebar {
+      top: unset;
+      bottom: 0;
+      right: unset;
+      left: 0;
+      flex-direction: row;
+      justify-content: space-evenly;
+      height: 4rem;
+      width: 100%;
+
+      &:before {
+        display: none;
+      }
+    }
+    .mat-fab {
+      bottom: 5rem;
+      right: 1rem;
+    }
+    .body-ctn {
+      padding: 1rem 1rem 5rem 1rem;
+    }
   }
 }
