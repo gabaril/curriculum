@@ -5,18 +5,19 @@ import {AppComponent} from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
-import {CompetencesComponent} from './pages/competences/competences.component';
+import {ConnaissancesComponent} from './pages/connaissances/connaissances.component';
 import {ExperienceComponent} from './pages/experience/experience.component';
 import {FormationsComponent} from './pages/formations/formations.component';
 import {MandatsComponent} from './pages/mandats/mandats.component';
 import {PresentationComponent} from './pages/presentation/presentation.component';
 import { LayoutComponent } from './pages/layout.component';
 import { LangageComponent } from './pages/langage/langage.component';
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CompetencesComponent,
+    ConnaissancesComponent,
     ExperienceComponent,
     FormationsComponent,
     MandatsComponent,
@@ -29,7 +30,8 @@ import { LangageComponent } from './pages/langage/langage.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]

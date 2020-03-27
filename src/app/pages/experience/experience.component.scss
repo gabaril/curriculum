@@ -1,6 +1,4 @@
-section {
-  margin-bottom: 3rem;
-
+div.content {
   &.experience {
     div {
       &:not(:last-of-type) {
@@ -13,20 +11,20 @@ section {
     }
   }
 
-  &.sommaire {
-    td:first-of-type {
-      font-family: 'Oswald', sans-serif;
-      text-transform: uppercase;
-      font-size: 1rem;
-      min-width: 15rem;
-    }
-    td:last-of-type {
-      font-family: 'Source Code Pro', monospace;
-      font-size: 1rem;
-      text-align: right;
-    }
-    tfoot tr td {
-      padding-top: 1rem;
-    }
-  }
+  //&.sommaire {
+  //  td:first-of-type {
+  //    font-family: 'Oswald', sans-serif;
+  //    text-transform: uppercase;
+  //    font-size: 1rem;
+  //    min-width: 15rem;
+  //  }
+  //  td:last-of-type {
+  //    font-family: 'Source Code Pro', monospace;
+  //    font-size: 1rem;
+  //    text-align: right;
+  //  }
+  //  tfoot tr td {
+  //    padding-top: 1rem;
+  //  }
+  //}
 }
