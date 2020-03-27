@@ -1,22 +1,22 @@
 <main>
   <aside class="sidebar-ctn">
     <div class="sidebar">
-      <a class="link" routerLink="" fragment="qui-suis-je" [ngClass]="{'active': activeElement === 'qui-suis-je'}">
+      <a class="link" routerLink="" fragment="qui-suis-je" title="Qui suis-je" matTooltip="Qui suis-je" matTooltipPosition="before" matTooltipShowDelay="750" aria-label="Lien menant vers la section qui suis-je." [ngClass]="{'active': activeElement === 'qui-suis-je'}">
         <mat-icon>face</mat-icon>
       </a>
-      <a class="link" routerLink="" fragment="experience" [ngClass]="{'active': activeElement === 'experience'}">
+      <a class="link" routerLink="" fragment="experience" title="Expérience" matTooltip="Expérience" matTooltipPosition="before" matTooltipShowDelay="750" aria-label="Lien menant vers la section expérience."  [ngClass]="{'active': activeElement === 'experience'}">
         <mat-icon>work</mat-icon>
       </a>
-      <a class="link" routerLink="" fragment="competences" [ngClass]="{'active': activeElement === 'competences'}">
+      <a class="link" routerLink="" fragment="connaissances" title="Connaissances Techniques" matTooltip="Connaissances Techniques" matTooltipPosition="before" matTooltipShowDelay="750" aria-label="Lien menant vers la section connaissances techniques."   [ngClass]="{'active': activeElement === 'connaissances'}">
         <mat-icon>whatshot</mat-icon>
       </a>
-      <a class="link" routerLink="" fragment="langues" [ngClass]="{'active': activeElement === 'langues'}">
-        <mat-icon>language</mat-icon>
-      </a>
-      <a class="link" routerLink="" fragment="formation" [ngClass]="{'active': activeElement === 'formation'}">
+      <a class="link" routerLink="" fragment="formation" title="Formation" matTooltip="Formation" matTooltipPosition="before" matTooltipShowDelay="750" aria-label="Lien menant vers la section formation."   [ngClass]="{'active': activeElement === 'formation'}">
         <mat-icon>school</mat-icon>
       </a>
-      <a class="link" routerLink="" fragment="mandats" [ngClass]="{'active': activeElement === 'mandats'}">
+      <a class="link" routerLink="" fragment="langues" title="Langues parlées et écrites" matTooltip="Langues parlées et écrites" matTooltipPosition="before" matTooltipShowDelay="750" aria-label="Lien menant vers la section langues parlées et écrites."   [ngClass]="{'active': activeElement === 'langues'}">
+        <mat-icon>language</mat-icon>
+      </a>
+      <a class="link" routerLink="" fragment="mandats" title="Mandats" matTooltip="Mandats" matTooltipPosition="before" matTooltipShowDelay="750" aria-label="Lien menant vers la section mandats."   [ngClass]="{'active': activeElement === 'mandats'}">
         <mat-icon>assignment</mat-icon>
       </a>
     </div>
@@ -30,21 +30,21 @@
     <section #section id="experience" title="experience">
       <app-experience></app-experience>
     </section>
-    <section #section id="competences" title="competences">
-      <app-competences></app-competences>
-    </section>
-    <section #section id="langues" title="langues">
-      <app-langage></app-langage>
+    <section #section id="connaissances" title="connaissances">
+      <app-connaissances></app-connaissances>
     </section>
     <section #section id="formation" title="formation">
       <app-formations></app-formations>
+    </section>
+    <section #section id="langues" title="langues">
+      <app-langage></app-langage>
     </section>
     <section #section id="mandats" title="mandats">
       <app-mandats></app-mandats>
     </section>
   </div>
 
-  <button mat-fab color="accent" (click)="openPDF()">
+  <button mat-fab color="accent" (click)="openPDF()" title="Curriculum version PDF" matTooltip="Curriculum version PDF" matTooltipPosition="before" matTooltipShowDelay="750" aria-label="Lien menant vers la version PDF du curriculum.">
     <mat-icon>picture_as_pdf</mat-icon>
   </button>
 </main>

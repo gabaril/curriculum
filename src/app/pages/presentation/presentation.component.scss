@@ -1,0 +1,15 @@
+@import '~@angular/material/theming';
+
+p {
+  i,
+  a {
+    color: mat-color($mat-pink, A400);
+  }
+  a {
+    white-space: nowrap;
+    transition: all ease 0.2s;
+    &:hover {
+      color: darken(mat-color($mat-pink, A400), 5%);
+    }
+  }
+}

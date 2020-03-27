@@ -1,6 +1,6 @@
 @import '~@angular/material/theming';
 
-section.competences {
+div.competences {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -11,13 +11,6 @@ section.competences {
     min-width: 320px;
     margin-bottom: 1rem;
     h3 {
-      //min-height: 1.75rem;
-      //padding: 0 0.5rem;
-      //display: flex;
-      //align-items: center;
-      //color: white;
-      //background-color: darken(mat-color($mat-pink, A400), 5%);
-
       color: mat-color($mat-pink, A400);
     }
     ul {
