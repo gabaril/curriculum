@@ -10,11 +10,11 @@
       <a class="link" routerLink="" fragment="competences" [ngClass]="{'active': activeElement === 'competences'}">
         <mat-icon>whatshot</mat-icon>
       </a>
-      <a class="link" routerLink="" fragment="langues" [ngClass]="{'active': activeElement === 'langues'}">
-        <mat-icon>language</mat-icon>
-      </a>
       <a class="link" routerLink="" fragment="formation" [ngClass]="{'active': activeElement === 'formation'}">
         <mat-icon>school</mat-icon>
+      </a>
+      <a class="link" routerLink="" fragment="langues" [ngClass]="{'active': activeElement === 'langues'}">
+        <mat-icon>language</mat-icon>
       </a>
       <a class="link" routerLink="" fragment="mandats" [ngClass]="{'active': activeElement === 'mandats'}">
         <mat-icon>assignment</mat-icon>
@@ -33,11 +33,11 @@
     <section #section id="competences" title="competences">
       <app-competences></app-competences>
     </section>
-    <section #section id="langues" title="langues">
-      <app-langage></app-langage>
-    </section>
     <section #section id="formation" title="formation">
       <app-formations></app-formations>
+    </section>
+    <section #section id="langues" title="langues">
+      <app-langage></app-langage>
     </section>
     <section #section id="mandats" title="mandats">
       <app-mandats></app-mandats>
