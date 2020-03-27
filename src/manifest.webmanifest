@@ -1,9 +1,10 @@
 {
   "name": "Curriculum - Gabriel Claveau-Baril",
-  "short_name": "cv-gabaril",
-  "theme_color": "#212121",
-  "background_color": "#ffffff",
+  "short_name": "CV - Gabriel Baril",
+  "theme_color": "#f50057",
+  "background_color": "#f50057",
   "display": "standalone",
+  "orientation": "portrait",
   "scope": "./",
   "start_url": "./",
   "icons": [
